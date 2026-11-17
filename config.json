@@ -1,0 +1,46 @@
+{
+  "symbols": "ALL",
+  "poll_seconds": 5,
+  "notional_usd": 100,
+  "fees_bps": {
+    "hyperliquid": 5,
+    "lighter": 2,
+    "edgex": 5,
+    "robinhood_lighter": 2,
+    "popdex": 5,
+    "arcus": 5
+  },
+  "slippage_buffer_bps": 2,
+  "funding_reserve_bps_per_hour": 2,
+  "entry_deviation_bps": 15,
+  "min_net_edge_bps": 3,
+  "confirm_seconds": 30,
+  "history_seconds": 86400,
+  "warmup_seconds": 3600,
+  "min_samples": 120,
+  "max_quote_age_seconds": 10,
+  "max_quote_skew_seconds": 5,
+  "take_profit_usd": 0.1,
+  "stop_loss_usd": 1,
+  "max_hold_seconds": 3600,
+  "max_positions": 2,
+  "max_total_notional_usd": 400,
+  "cooldown_seconds": 60,
+  "venues": [
+    "edgex",
+    "robinhood_lighter",
+    "popdex",
+    "arcus"
+  ],
+  "execution": {
+    "enabled": true,
+    "min_expected_profit_usd": 0.1,
+    "route_window": 8,
+    "route_min_trades": 3,
+    "route_max_consecutive_losses": 2,
+    "route_loss_limit_usd": 0.5,
+    "route_pause_seconds": 86400,
+    "break_even_after_seconds": 60,
+    "break_even_buffer_usd": 0.02
+  }
+}

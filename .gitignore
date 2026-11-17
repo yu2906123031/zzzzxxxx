@@ -1,0 +1,29 @@
+# Local credentials and account configuration
+.env
+.env.*
+!.env.example
+!.env.init-live.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Runtime ledgers, reports, scraped third-party pages and logs
+data/
+output/
+research/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+
+# Local tools and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.codex/
+.agents/
+.aws/
